@@ -2,51 +2,51 @@ export const CATEGORIES = [
   {
     id: "c1",
     title: "Italian",
-    color: "#f5428d",
+    color: "#d13374",
   },
   {
     id: "c2",
     title: "Quick & Easy",
-    color: "#f54242",
+    color: "#d13333",
   },
   {
     id: "c3",
     title: "Hamburgers",
-    color: "#f5a442",
+    color: "#d49035",
   },
   {
     id: "c4",
     title: "German",
-    color: "#f5d142",
+    color: "#d4b235",
   },
   {
     id: "c5",
     title: "Light & Lovely",
-    color: "#368dff",
+    color: "#2c75d6",
   },
   {
     id: "c6",
     title: "Exotic",
-    color: "#41d95d",
+    color: "#36b453",
   },
   {
     id: "c7",
     title: "Breakfast",
-    color: "#9eecff",
+    color: "#8cd7f2",
   },
   {
     id: "c8",
     title: "Asian",
-    color: "#b9ffb0",
+    color: "#9ad599",
   },
   {
     id: "c9",
     title: "French",
-    color: "#ffc7ff",
+    color: "#d4a5d6",
   },
   {
     id: "c10",
     title: "Summer",
-    color: "#47fced",
+    color: "#3ccfc1",
   },
 ];

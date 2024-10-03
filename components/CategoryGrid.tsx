@@ -14,13 +14,13 @@ const CategoryGrid = ({ title, color, onSelect }: CategoryGridProps) => {
         style={{
           borderRadius: 20,
           backgroundColor: color,
-          height: 120,
+          height: 130,
           justifyContent: "center",
           alignItems: "center",
         }}
         onPress={onSelect}
       >
-        <Text className="text-white font-bold text-lg text-right">{title}</Text>
+        <Text className="text-white font-bold text-lg">{title}</Text>
       </TouchableOpacity>
     </View>
   );

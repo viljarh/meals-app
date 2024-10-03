@@ -1,8 +1,15 @@
 import React from "react";
-import { FlatList, ListRenderItem, View } from "react-native";
+import {
+  FlatList,
+  ListRenderItem,
+  SafeAreaView,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { useRouter } from "expo-router";
 import CategoryGrid from "@/components/CategoryGrid";
 import { CATEGORIES } from "@/constants/categories";
+import { Bars3Icon } from "react-native-heroicons/outline";
 
 interface Category {
   id: string;
@@ -20,7 +27,7 @@ const CategoriesScreen: React.FC = () => {
         color={itemData.item.color}
         onSelect={() => {
           router.push({
-            pathname: "/Meals",
+            pathname: "/MealsOverview",
             params: { categoryId: itemData.item.id },
           });
         }}
@@ -29,21 +36,27 @@ const CategoriesScreen: React.FC = () => {
   };
 
   return (
-    <FlatList
-      data={CATEGORIES}
-      renderItem={renderGridItem}
-      numColumns={2}
-      keyExtractor={(item) => item.id}
-      style={{ backgroundColor: "#201917" }}
-      contentContainerStyle={{
-        flex: 1,
-        paddingBottom: 20,
-        paddingTop: 50,
-        paddingHorizontal: 10,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    />
+    <SafeAreaView className="flex-1 bg-[#201917]">
+      <View className="ml-6">
+        <TouchableOpacity>
+          <Bars3Icon color="#E7BFAC" size={30} />
+        </TouchableOpacity>
+      </View>
+      <FlatList
+        data={CATEGORIES}
+        renderItem={renderGridItem}
+        numColumns={2}
+        keyExtractor={(item) => item.id}
+        contentContainerStyle={{
+          flex: 1,
+          paddingBottom: 20,
+          paddingTop: 20,
+          paddingHorizontal: 10,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      />
+    </SafeAreaView>
   );
 };
 
