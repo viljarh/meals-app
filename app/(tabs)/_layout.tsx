@@ -1,37 +1,36 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { Tabs } from "expo-router";
+import { HomeIcon, StarIcon } from "react-native-heroicons/outline";
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+const TabLayout = () => {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-      }}>
+        tabBarInactiveTintColor: "gray",
+        tabBarActiveTintColor: "#E7BFAC",
+        tabBarStyle: {
+          backgroundColor: "#201917",
+          borderTopColor: "#201917",
+        },
+      }}
+    >
       <Tabs.Screen
-        name="index"
+        name="categories"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
-          ),
+          tabBarLabel: "Categories",
+          tabBarIcon: ({ color }) => <HomeIcon size={24} color={color} />,
         }}
       />
+
       <Tabs.Screen
-        name="explore"
+        name="favorites"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
-          ),
+          tabBarLabel: "Favorites",
+          tabBarIcon: ({ color }) => <StarIcon size={24} color={color} />,
         }}
       />
     </Tabs>
   );
-}
+};
+
+export default TabLayout;
