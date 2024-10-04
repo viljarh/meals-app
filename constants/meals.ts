@@ -6,7 +6,7 @@ export const MEALS = [
     affordability: "affordable",
     complexity: "simple",
     imageUrl:
-      "https://www.simplyrecipes.com/thmb/7-Rvs_MNvn7m6MjA-V5exGZgfLI=/2000x1500/filters:no_upscale()/Simply-Recipes-Spaghetti-Tomato-Sauce-Lead-5b8302a0295e4e21a15ef63f257fbc08.jpg",
+      "https://img.taste.com.au/XEOuZA8K/w643-h428-cfill-q90/taste/2024/03/5-ingredient-turbo-charged-spaghetti-recipe-196959-1.jpg",
     duration: 20,
     ingredients: [
       "4 Tomatoes",
@@ -37,7 +37,7 @@ export const MEALS = [
     affordability: "affordable",
     complexity: "simple",
     imageUrl:
-      "https://www.cookingclassy.com/wp-content/uploads/2021/09/french-toast-28.jpg",
+      "https://www.sandwichtribunal.com/wp-content/uploads/2019/10/IMG_8712.jpg",
     duration: 10,
     ingredients: [
       "1 Slice White Bread",
@@ -63,7 +63,7 @@ export const MEALS = [
     affordability: "pricey",
     complexity: "simple",
     imageUrl:
-      "https://www.simplyrecipes.com/thmb/5Z9_7NwxM-wtfszJBrYt7b4Qj9s=/2000x1333/filters:fill(auto,1)/Simply-Recipes-Hamburger-Lead-6-7226896a9f254d9a8e52c8a8e357e700.jpg",
+      "https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/4:3/w_3336,h_2502,c_limit/Smashburger-recipe-120219.jpg",
     duration: 45,
     ingredients: [
       "300g Cattle Hack",
@@ -92,7 +92,7 @@ export const MEALS = [
     affordability: "luxurious",
     complexity: "challenging",
     imageUrl:
-      "https://www.culinaryhill.com/wp-content/uploads/2022/06/Authentic-Wiener-Schnitzel-Culinary-Hill-LR-05.jpg",
+      "https://www.thespruceeats.com/thmb/BS5BdyQsGh5qQyRiuZMannmcxoY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-wiener-schnitzel-recipe-1447089-hero-02-18827aac4cbd4aec926350d4f9778e70.jpg",
     duration: 60,
     ingredients: [
       "8 Veal Cutlets",
@@ -125,7 +125,7 @@ export const MEALS = [
     affordability: "luxurious",
     complexity: "simple",
     imageUrl:
-      "https://cookieandkate.com/images/2017/07/smoked-salmon-nicoise-salad-recipe-1.jpg",
+      "https://hildaskitchenblog.com/wp-content/uploads/2023/01/smoked-salmon-salad-recipes-4.jpg",
     duration: 15,
     ingredients: [
       "Arugula",
@@ -158,7 +158,7 @@ export const MEALS = [
     affordability: "affordable",
     complexity: "simple",
     imageUrl:
-      "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/exotic-fruit-salad-e2d2e91.jpg",
+      "https://www.garlicandzest.com/wp-content/uploads/2014/01/TROPICAL-FRUIT-SALAD-7.jpg",
     duration: 30,
     ingredients: [
       "Mango",

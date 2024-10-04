@@ -15,7 +15,7 @@ const TabLayout = () => {
       }}
     >
       <Tabs.Screen
-        name="categories"
+        name="(home)/index"
         options={{
           tabBarLabel: "Categories",
           tabBarIcon: ({ color }) => <HomeIcon size={24} color={color} />,
