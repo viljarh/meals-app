@@ -39,9 +39,14 @@ const MealItem: React.FC<MealItemProps> = ({
       </View>
       <View style={styles.details}>
         <Text style={styles.title}>{title}</Text>
-        <Text>Time: {duration} mins</Text>
-        <Text>Complexity: {complexity}</Text>
-        <Text>Cost: {affordability}</Text>
+        <View style={styles.detailsRow}>
+          <Text style={styles.detailsItem}>🕐{duration} mins</Text>
+          <Text style={styles.detailsItem}>👨‍🍳{complexity}</Text>
+          <Text style={styles.detailsItem}>
+            💰
+            {affordability}
+          </Text>
+        </View>
       </View>
     </TouchableOpacity>
   );
@@ -100,6 +105,24 @@ const styles = StyleSheet.create({
   },
   details: {
     padding: 15,
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  detailsRow: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginTop: 10,
+    width: "100%",
+  },
+  detailsItem: {
+    marginHorizontal: 10,
+    paddingVertical: 4,
+    paddingHorizontal: 4,
+    fontSize: 12,
+    fontWeight: "500",
+    color: "#3A3B3C",
+    textTransform: "capitalize",
   },
   title: {
     fontSize: 18,
